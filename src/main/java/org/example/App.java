@@ -18,6 +18,7 @@ public class App
         String adjective = x.nextLine();
         System.out.print( "Enter a adverb: " );
         String adverb = x.nextLine();
-        System.out.println("Do you "+verb+" your "+adjective+" "+noun+" "+adverb+"? That's hilarious!");
+        String output = String.format("Do you %s your %s %s %s? That's hilarious!",verb,adjective,noun,adverb);
+        System.out.println(output);
     }
 }
